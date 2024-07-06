@@ -303,7 +303,7 @@ def main():
 
         try:
             time.sleep(10)
-            post = Comment(reply_identifier)
+            post = Comment(reply_identifier, "database")
         except beem.exceptions.ContentDoesNotExistsException:
             print('post not found!')
             continue
